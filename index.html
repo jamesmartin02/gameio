@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>@import "compass/css3";
+
+        .mario-game {
+          position: fixed;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          font-family: sans-serif;
+        
+          .background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: #0181ff; /* Old browsers */
+            background: -moz-linear-gradient(top,  #0181ff 0%, #94edff 100%); /* FF3.6+ */
+            background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#0181ff), color-stop(100%,#94edff)); /* Chrome,Safari4+ */
+            background: -webkit-linear-gradient(top,  #0181ff 0%,#94edff 100%); /* Chrome10+,Safari5.1+ */
+            background: -o-linear-gradient(top,  #0181ff 0%,#94edff 100%); /* Opera 11.10+ */
+            background: -ms-linear-gradient(top,  #0181ff 0%,#94edff 100%); /* IE10+ */
+            background: linear-gradient(to bottom,  #0181ff 0%,#94edff 100%); /* W3C */
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0181ff', endColorstr='#94edff',GradientType=0 ); /* IE6-9 */
+          }
+          .foreground {
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            height: 40px;
+            background: #c98524;
+          }
+        
+          .mario {
+            position: absolute;
+            left: 100px;
+            bottom: 40px;
+            height: 40px;
+            width: 20px;
+            background: #666;
+        
+            -webkit-transition: top 0.1s linear, left 0.1s linear, right 0.1s linear, bottom 0.1s linear;
+            -moz-transition: top 0.1s linear, left 0.1s linear, right 0.1s linear, bottom 0.1s linear;
+            -ms-transition: top 0.1s linear, left 0.1s linear, right 0.1s linear, bottom 0.1s linear;
+            -o-transition: top 0.1s linear, left 0.1s linear, right 0.1s linear, bottom 0.1s linear;
+            transition: top 0.1s linear, left 0.1s linear, right 0.1s linear, bottom 0.1s linear;
+          }
+        }</style>
+</head>
+<body>g
+    <div class="mario-game">
+        <div class="background"></div>
+        <div class="foreground"></div>
+        <div class="mario"></div>
+      </div>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+      <script src="script.js"></script>
+</body>
+
+</html>
